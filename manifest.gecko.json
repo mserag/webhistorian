@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Web Historian - Web History Visualizations",
-  "version": "0.8.6",
-  "short_name": "Web Historian",
-  "description": "Web Historian - Visualize your web use to understand your habits",
+  "name": "LifeLog",
+  "version": "1.0",
+  "short_name": "Life Log",
+  "description": "Upload all my browser history to LifeLog",
   "permissions": [
     "history",
     "tabs",
