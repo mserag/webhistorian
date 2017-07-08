@@ -638,10 +638,10 @@ define(["moment", "app/config", "app/utils"], function (moment, config, utils)
                     chrome.tabs.onCreated.addListener(function(tab){
                       svyTab = tab.id;
                       $("#wh_initial_survey").click(function (){
-                        chrome.tabs.update(svyTab, {"active": true});
+                        //chrome.tabs.update(svyTab, {"active": true});
                       });
                     });
-                    chrome.tabs.create({url: url , active: false});
+                    //chrome.tabs.create({url: url , active: false});
                     $("ul#progress_actions_list").html(output);
                   }
                   else {
@@ -693,7 +693,7 @@ define(["moment", "app/config", "app/utils"], function (moment, config, utils)
                     }
                   });
                   lastUl = now;
-                  chrome.tabs.update(svyTab, {"active": true});               
+                  //chrome.tabs.update(svyTab, {"active": true});               
                   chrome.browserAction.setBadgeText({ text: "" }); 
                   chrome.browserAction.setTitle({ title: "Web Historian" });  
                 });
@@ -782,6 +782,7 @@ define(["moment", "app/config", "app/utils"], function (moment, config, utils)
       
           if (month.length < 2)
           {
+
             month = '0' + month;
           }
 
