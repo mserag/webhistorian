@@ -26,7 +26,7 @@ define(function() {
 			var dataString = JSON.stringify(dayPoints, 2);
 		
 			$.ajax({
-				type: "CREATE",
+				type: "POST",
 				url: endpoint,
 				dataType: "json",
 				contentType: "application/json",
